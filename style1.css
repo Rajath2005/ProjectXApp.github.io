@@ -1,0 +1,123 @@
+/* Move the navigation links to the right */
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+/* Animation effects for navigation links */
+.header-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ffcc00;
+    transition: width 0.4s ease;
+    -webkit-transition: width 0.4s ease;
+}
+
+.header-nav a:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: #ffcc00;
+}
+
+/* Additional styles for the page can go here */
+* {
+    font-family: Nunito, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 0 30px;
+  }
+  
+  .team-head-text {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .responsive-container-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-container {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  
+  .card {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-image-wrapper {
+    clip-path: circle(50% at 50% 50%);
+    width: 130px;
+    height: 130px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to prevent overflow */
+  }
+  
+  .team-member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 20px 0 5px;
+  }
+  
+  .position {
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

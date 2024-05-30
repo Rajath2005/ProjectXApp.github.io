@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global2.css" />
+    <link rel="stylesheet" href="./child-register.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Chewy:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fugaz One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Basic:ital,wght@1,800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Corbel:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inknut Antiqua:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="child-register">
+      <h1 class="age-of-your">Age of your child</h1>
+      <img
+        class="shield-checkmark-icon"
+        alt=""
+        src="./public/shieldcheckmark.svg"
+      />
+
+      <div class="app-header"></div>
+      <div class="app-header1"></div>
+      <div class="child-info">
+        <div class="button" id="buttonContainer">
+          <div class="inner-button">
+            <a class="button1">Back</a>
+          </div>
+          <img
+            class="arrowbackwardcircle-icon"
+            loading="lazy"
+            alt=""
+            src="./public/arrowbackwardcircle.svg"
+          />
+        </div>
+      </div>
+      <main class="content">
+        <section class="profile">
+          <img
+            class="profile-child"
+            loading="lazy"
+            alt=""
+            src="./public/ellipse-8.svg"
+          />
+
+          <div class="profile-item"></div>
+          <div class="profile-details">
+            <div class="settings">
+              <div class="check-mark">
+                <img
+                  class="shield-checkmark-icon1"
+                  loading="lazy"
+                  alt=""
+                  src="./public/shieldcheckmark.svg"
+                />
+              </div>
+              <div class="settings1"></div>
+            </div>
+          </div>
+        </section>
+        <section class="name-of-your-child-parent">
+          <h1 class="name-of-your">Name of your Child</h1>
+          <div class="frame-wrapper">
+            <div class="input-label-parent">
+              <div class="input-label">7</div>
+              <div class="wrapper-line-3">
+                <img
+                  class="wrapper-line-3-child"
+                  loading="lazy"
+                  alt=""
+                  src="./public/line-3.svg"
+                />
+              </div>
+              <div class="frame-child"></div>
+              <div class="input-details">
+                <div class="input-increment">
+                  <div class="increment-label">5</div>
+                  <div class="increment-button">
+                    <div class="vector-parent">
+                      <img
+                        class="frame-item"
+                        alt=""
+                        src="./public/rectangle-7.svg"
+                      />
+
+                      <img
+                        class="arrow-up-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./public/arrowup.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="input-description">
+                  <p class="p">12</p>
+                </div>
+              </div>
+              <div class="input">
+                <div class="input-label1">Age</div>
+                <div class="input1">
+                  <div class="input2">
+                    <input
+                      class="inputnonefalsefalsefalseh"
+                      placeholder="Enter Input"
+                      type="text"
+                    />
+                  </div>
+                  <div class="informational-text"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="registration">
+          <div class="registration-form">
+            <div class="input3">
+              <div class="input-label2">Name</div>
+              <div class="input4">
+                <div class="input5">
+                  <input
+                    class="inputnonefalsefalsefalseh1"
+                    placeholder="Enter Input"
+                    type="text"
+                  />
+                </div>
+                <div class="informational-text1"></div>
+              </div>
+            </div>
+            <footer class="register-button">
+              <div class="button-content">
+                <div class="registration-label-wrapper">
+                  <button class="registration-label">
+                    <div class="registration-label-child"></div>
+                    <div class="register">Register</div>
+                  </button>
+                </div>
+                <div class="button-content-child"></div>
+              </div>
+            </footer>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = './page-of-parent.html';
+        });
+      }
+      </script>
+  </body>
+</html>

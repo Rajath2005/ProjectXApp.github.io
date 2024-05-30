@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Speech to Text Converter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color: #f5f5f5;
+			margin: 0;
+		}
+		.container {
+			width: 80%;
+			max-width: 800px;
+			background: #fff;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			padding: 40px;
+			border-radius: 12px;
+			text-align: center;
+		}
+		h2 {
+			font-size: 30px;
+			margin-bottom: 3cm;
+		}
+		#result {
+			height: 300px;
+			border: 1px solid #f48f8fab;
+			padding: 30px;
+			box-shadow: 0 0 10px 0 #bbb;
+			margin-bottom: 30px;
+			font-size: 18px;
+			line-height: 30px;
+			border-radius: 8px;
+			overflow-y: auto;
+		}
+		button {
+			font-size: 30px;
+			background-color: #dc3545;
+			color: white;
+			border: none;
+			border-radius: 50%;
+			width: 80px;
+			height: 80px;
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 20px;
+		}
+		button:focus {
+			outline: none;
+		}
+		.back-button {
+			font-size: 18px;
+			background-color: #007bff;
+			color: white;
+			border: none;
+			border-radius: 8px;
+			padding: 10px 20px;
+			cursor: pointer;
+			display: inline-block;
+			margin-top: 20px;
+		}
+		.back-button:focus {
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Speech to Text Converter</h2>
+		<div id="result"></div>
+		<button onclick="startConverting();"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+		<button class="back-button" onclick="window.history.back();">Back </button>
+	</div>
+
+	<script>
+		var result = document.getElementById('result');
+  
+		function startConverting() {
+			if ('webkitSpeechRecognition' in window) {
+				var speechRecognizer = new webkitSpeechRecognition();
+				speechRecognizer.continuous = true;
+				speechRecognizer.interimResults = true;
+				speechRecognizer.lang = 'en-US';
+				speechRecognizer.start();
+
+				var finalTranscripts = '';
+
+				speechRecognizer.onresult = function(event) {
+					var interimTranscripts = '';
+					for (var i = event.resultIndex; i < event.results.length; i++) {
+						var transcript = event.results[i][0].transcript;
+						transcript = transcript.replace("\n", "<br>");
+						if (event.results[i].isFinal) {
+							finalTranscripts += transcript;
+						} else {
+							interimTranscripts += transcript;
+						}
+					}
+					result.innerHTML = finalTranscripts + '<span style="color: #999">' + interimTranscripts + '</span>';
+				};
+				speechRecognizer.onerror = function(event) {
+					// Handle error
+				};
+			} else {
+				result.innerHTML = 'Your browser is not supported. Please download Google Chrome or update your Google Chrome!';
+			}
+		}
+	</script>
+</body>
+</html>
