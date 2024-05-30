@@ -1,0 +1,157 @@
+/* style.css */
+
+/* General reset for better cross-browser compatibility */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('header-bg.jpg'); /* Replace with your actual background image path */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.729);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: hsl(35, 86%, 46%);
+}
+
+.header-container {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 2s ease-in-out forwards; /* Fade in effect */
+}
+
+.header-container .heading {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.header-container p {
+  font-size: 24px;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1; /* End visible */
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.info-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.meaning-container {
+  display: none;
+}
+
+.meaning-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.meaning-container .title {
+  font-weight: bold;
+}
+
+.meaning-container .meaning {
+  font-style: italic;
+}
+
+.meaning-container .example {
+  color: gray;
+}
+
+.audio {
+  margin-top: 20px;
+}
+
+.history-container {
+  margin-top: 30px;
+}
+
+.history-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.history-container ul {
+  list-style: none;
+}
+
+.history-container li {
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.history-container li:hover {
+  color: blue;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+footer p {
+  margin: 0;
+}
+

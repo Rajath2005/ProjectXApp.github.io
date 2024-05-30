@@ -1,0 +1,209 @@
+.button7 {
+  text-decoration: none;
+  position: relative;
+  font-size: var(--body-body-14-size);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  min-width: 35px;
+}
+.frame-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs-5) 0 0;
+}
+.arrowbackwardcircle-icon3 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+.button6 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-21xl);
+  background-color: var(--theme-dark-orangegreen);
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.are-you-parent {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.are-you-parent-or-child-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs) 0 var(--padding-4xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.parent-selection,
+.rectangle-div {
+  border-radius: var(--br-37xl);
+  background-color: var(--color-tomato-100);
+}
+.parent-selection {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: -9px;
+  bottom: 0;
+}
+.rectangle-div {
+  height: 67px;
+  width: 374px;
+  position: relative;
+  display: none;
+  max-width: 100%;
+}
+.i-am-a {
+  width: 299px;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  font-family: var(--font-corben);
+  color: var(--color-white);
+  text-align: center;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.rectangle-parent {
+  cursor: pointer;
+  border: 0;
+  padding: 16px var(--padding-10xl) var(--padding-7xs);
+  background-color: var(--color-tomato-100);
+  flex: 1;
+  border-radius: var(--br-37xl);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  white-space: nowrap;
+  max-width: 100%;
+  z-index: 1;
+}
+.rectangle-parent:hover {
+  background-color: #ff6e5c;
+}
+.frame-parent1,
+.parent-selection-parent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.parent-selection-parent {
+  flex-direction: row;
+  position: relative;
+}
+.frame-parent1 {
+  flex-direction: column;
+  gap: 113px;
+}
+.frame-child1 {
+  height: 67px;
+  width: 374px;
+  position: relative;
+  border-radius: var(--br-37xl);
+  background-color: var(--color-tomato-100);
+  display: none;
+  max-width: 100%;
+}
+.i-am-a1 {
+  margin: 0;
+}
+.i-am-a-container {
+  width: 299px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.rectangle-group {
+  align-self: stretch;
+  border-radius: var(--br-37xl);
+  background-color: var(--color-tomato-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-12xs) var(--padding-10xl) 21px;
+  box-sizing: border-box;
+  max-width: 100%;
+  color: var(--color-white);
+  font-family: var(--font-corben);
+}
+.frame-container,
+.login,
+.login-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-container {
+  flex: 1;
+  flex-direction: column;
+  gap: 157px;
+  max-width: 100%;
+}
+.login,
+.login-inner {
+  box-sizing: border-box;
+}
+.login-inner {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-3xs) 0 30px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inknut-antiqua);
+}
+.login {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 0 295px;
+  gap: 86px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 374px) {
+  .frame-parent1 {
+    gap: 40px;
+  }
+  .frame-container {
+    gap: 78px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.link-class {
+  text-decoration: none; 
+  color: inherit; 
+}
+

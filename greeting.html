@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Personalized Greeting</title>
+</head>
+<body>
+    <div class="greeting-container">
+        <div class="frame">
+            <h1>Hello <span id="userName"></span>🎉!</h1>
+            <a href="./index1.html">
+            <button class="enter-button">Let's Enter ➔</button>
+        </a>
+        </div>
+    </div>
+
+    <script>
+        const storedName = localStorage.getItem('userName');
+        document.getElementById('userName').textContent = storedName || 'Guest';
+    </script>
+    <footer>
+        <p>&copy; 2024 Binary Explorers . All rights reserved.</p>
+    </footer>
+</body>
+</html>

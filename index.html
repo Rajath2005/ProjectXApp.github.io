@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global1.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fugaz One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Basic:ital,wght@1,800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-1" data-animate-on-scroll>
+      <div class="desktop-1-inner">
+        <div class="vector-parent">
+          <img
+            class="frame-child"
+            loading="lazy"
+            alt=""
+            src="ellipse-1@2x.png"
+          />
+
+          <div class="kids-wrapper">
+            <img
+              class="kids-icon"
+              loading="lazy"
+              alt=""
+              src="kids@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <section class="footer">
+        <h1 class="learn-meanings-of" data-animate-on-scroll>
+          Learn meanings of word and pronunciation for free !
+        </h1>
+        <div class="primary-button-wrapper">
+          <button class="primary-button">
+            <i class="get-started">Get Started !</i>
+          </button>
+        </div>
+        <a href="index1.html">
+        <div class="button-wrapper">
+          
+          <button class="button">
+            <div class="button1">Skip</div>
+            <img
+              class="arrowbackwardcircle-icon"
+              alt=""
+              src="arrowbackwardcircle.svg"
+            />
+          
+          </button>
+        </a>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+
+
+      document.querySelector('.primary-button').addEventListener('click', function() {
+    window.location.href = './index2.html';
+  });
+
+
+      
+      </script>
+  </body>
+</html>

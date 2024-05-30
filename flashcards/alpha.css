@@ -1,0 +1,38 @@
+/* styles.css */
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.729);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: hsl(35, 86%, 46%);
+}

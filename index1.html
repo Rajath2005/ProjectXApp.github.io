@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Dictionary</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="Logo.jpeg" alt="Logo" class="logo">
+        </div>
+        <div class="nav-links">
+            <a href="index1.html">Home</a>
+            <a href="service.html">services</a>
+            <a href="about.html">About</a>
+            <a href="conatct.html">Contact-Us</a>
+            
+        </div>
+    </nav>
+    <header class="header-container">
+        <h1 class="heading">English Dictionary</h1>
+        <p>Welcome to our online dictionary. Find meanings, pronunciations, and examples for English words.</p>
+    </header>
+    
+   
+    <div class="container">
+        <input placeholder="Search a word" type="text" class="input" id="input">
+        <p class="info-text" id="info-text">Type a word and press enter</p>
+        <div class="meaning-container" id="meaning-container">
+            <p>Word Title: <span class="title" id="title">___</span></p>
+            <p>Meaning: <span class="meaning" id="meaning">___</span></p>
+            <p>Example: <span class="example" id="example">___</span></p>
+            <audio src="" controls id="audio"></audio>
+        </div>
+        <div class="history-container" id="history-container">
+            <h2>Search History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="index1.js"></script>
+    
+
+    <footer>
+        <p>&copy; 2024 Binary Explorers . All rights reserved.</p>
+    </footer>
+</body>
+</html>

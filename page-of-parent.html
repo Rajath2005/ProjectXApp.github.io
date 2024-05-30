@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global2.css" />
+    <link rel="stylesheet" href="./page-of-parent.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Chewy:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fugaz One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Basic:ital,wght@1,800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Corbel:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inknut Antiqua:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="page-of-parent">
+      <header class="button-container">
+        <button class="button4" id="button">
+          <div class="button-frame">
+            <a href="index2.html" class="button5">Back</a>
+          </div>
+          <img
+            class="arrowbackwardcircle-icon2"
+            alt=""
+            src="arrowbackwardcircle.svg"
+          />
+        </button>
+      </header>
+      <section class="page-of-parent-inner">
+        <div class="frame-parent">
+          <div class="male-parent">
+            <div class="male"></div>
+            <div class="create-login-account"></div>
+            <div class="buttonremoveprofile"></div>
+            <div class="buttoncreateloginaccount-parent">
+              <div class="buttoncreateloginaccount"></div>
+              <img
+                class="rectangle-icon"
+                loading="lazy"
+                alt=""
+                src="rectangle-5.svg"
+              />
+            </div>
+          </div>
+          <p class="to-ensure-the">
+            To ensure the safety of our app, we require you to provide a facial
+            recognition scan. This is a measure to prevent unauthorized access
+            and protect against potential fraud. By verifying your identity, we
+            can ensure that only authorized individuals can access the app. We
+            kindly request your cooperation in complying with this requirement.
+            Please confirm that you understand and agree to this measure. Thank
+            you for your understanding and for helping us maintain a secure
+            environment for our users
+          </p>
+        </div>
+      </section>
+      <section class="page-of-parent-child">
+        <div class="frame-group">
+          <div class="vector-container">
+            <img
+              class="ellipse-icon"
+              alt=""
+              src="ellipse-12.svg"
+              id="ellipse"
+            />
+
+            <img
+              class="photo-focus-ellipse-icon"
+              loading="lazy"
+              alt=""
+              src="continue.png"
+            />
+          </div>
+          <div class="ellipse-wrapper">
+            <div class="ellipse-div"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var button = document.getElementById("button");
+      if (button) {
+        button.addEventListener("click", function (e) {
+          // Please sync "Beginning" to the project
+        });
+      }
+      
+      var ellipse = document.getElementById("ellipse");
+      if (ellipse) {
+        ellipse.addEventListener("click", function (e) {
+          window.location.href = "child-register.html";
+        });
+      }
+      </script>
+  </body>
+</html>

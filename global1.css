@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-basic: Basic;
+  --font-fugaz-one: "Fugaz One";
+
+  /* Colors */
+  --color-white: #fff;
+
+  /* Paddings */
+  --padding-xl: 20px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+}
