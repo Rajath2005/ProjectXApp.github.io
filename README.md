@@ -45,8 +45,8 @@ ProjectXApp.github.io/
 ```
 
 ## 🗄 Screenshots
-![Homepage](assets/homepage.png)
-![Dictionary Search](assets/dictionary.png)
+![Homepage](image.png)
+![Dictionary Search](image1.png)
 
 ## 📌 Future Enhancements
 - 🔄 **Dark Mode Support**
